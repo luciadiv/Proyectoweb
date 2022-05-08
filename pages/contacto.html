@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <title>Verde | Contacto</title>
+</head>
+<body>
+    <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
+        <div>
+           <a href="../index.html"><img class="header_logo" src="../images/Logo_color.png" alt="Logotipo Verde"></a>
+        </div>
+        <div>
+            <a href="#menu" class="menu_escondido">
+                <span class="jam jam-menu"></span>
+            </a>
+        </div>
+        <nav  class="menu_hidden"  id="menu"> 
+           <ul class="header_menu" class="nav_lista" >
+               <li class="header_nav"><a class="header_link" href="../pages/quienessomos.html">Quiénes somos</a></li>
+               <li class="header_nav"><a class= "header_link" href="../pages/quehacemos.html">Qué hacemos</a></li>
+               <li class="header_nav"><a class= "header_link" href="../pages/novedades.html">Novedades</a></li>
+               <li class="headder_nav"><a class= "header_link" href="../pages/contacto.html">Contacto</a></li>
+               <li class="headder_nav"><a class= "header_link" href="#"><span class="jam jam-close"></span></a></li>
+            </ul>
+    </nav>
+        <div>
+            <button class="header_boton"><a class="header_boton_link" href="../pages/dona.html">Doná</a></button>
+        </div>
+   </header> <!--fin del header-->
+    <main class="contacto_main">
+    <section  class="contacto_seccion">
+        <h2 class="contacto_texto1">Tu voz es importante</h2>
+        <h3 class="contacto_texto2">Por favor, completá tus datos para enviarnos un mensaje</h3>
+    <form class="contacto_form" action="" method="" enctype="" enctype="">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresar apellido">
+        </div>
+        <div>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresar email">
+        </div>
+        <div>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" cols="40"  placeholder="Ingrese su comentario"></textarea>
+        </div>
+        <div>
+            <button class="contacto_boton">Enviar</button>
+        </div>
+    </form>
+    </section>
+    </main>
+    <footer class="footer"><!--footer: contacto simple+ newsletter formulario + redes con enlaces-->
+        <section> <!--CONTACTO-->               
+            <h4>Contacto</h4>
+            <span class="footer_contacto_linea">CABA, Argentina</span> 
+            <span class="footer_contacto_linea"> + 54 9 11 51199020</span>
+            <span class="footer_contacto_linea">info@verde.com</span>
+        </section>
+        <section><!--BOLETIN-->
+            <h4>Boletín</h4>
+            <span>Recibí las novedades</span>
+            <form action="" method="" enctype="" enctype="">
+                <div><!--Nombre-->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre">
+                </div>
+                <div><!--Apellido-->
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresar apellido">
+                </div>
+                <div><!--Correo-->
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresar email">
+                </div>
+                <div>
+                    <button class="footer_newsletter_boton">Suscribirse</button>
+                </div>
+            </form>
+        </section>
+        <section><!--REDES SOCIALES-->
+            <h4>Seguinos</h4>
+            <a href="https://www.facebook.com"><img class="footer_redes_img" src="../images/Facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img class="footer_redes_img" src="../images/Instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img class="footer_redes_img" src="../images/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com"><img class="footer_redes_img" src="../images/YouTube.png" alt="YouTube"></a>
+        </section>            
+</footer>
+</body>
+</html>

@@ -1,0 +1,677 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1825px;
+    height: 130px;
+    padding: 10px;
+    border: 0px;
+    margin: 0px;
+}
+
+.menu_escondido {
+    display: none;
+}
+
+.cruz_hidden {
+    display: none;
+}
+
+.header_logo {
+    width: 70%;
+    height: 70%;
+    padding: 5%;
+}
+
+.header_menu {
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none
+    
+}
+
+.header_nav {
+    margin-right: 4rem;
+    padding: 2px;
+}
+
+.header_link {
+    color: white;
+    text-decoration: none;
+}
+
+.header_boton {
+    background-color: green;
+    width: 150px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 20%;
+    margin: 6rem;
+    border: none;
+    padding: 10px;
+}
+
+.header_boton_link {
+    color: beige;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.main_home {
+    width: 1825px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/humedales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_home_lema {
+    color: white;
+    font-size: 100px;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: rgba(0, 0, 0,0.8); 
+    width: 1825px;
+    height: 300%;
+    padding: 10px;
+    border: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:top;
+}
+
+footer section {
+    padding: 10px;
+    margin: 30px;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: left;
+    color: white;
+    display: inline-block
+}
+
+.footer_contacto_linea {
+    display: block
+}
+
+.footer_newsletter_boton {
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin: 1rem;
+    font-size: 17px;
+    border-radius: 20%;
+    border: none;
+    color: beige;
+}
+
+.footer_redes_img {
+    width: 50px;
+    display: inline-block;
+}
+
+/*QUIENES SOMOS*/
+.quienesSomos_main {
+    background-color: #566968;
+    width: 1825px;
+    height: 800px;
+    display: inline-block;
+}
+
+.quienesSomos_miViVa {
+    background-color: #93b3b1;
+    color:white;
+    line-height: 160%;
+    font-size: 100%;
+    display: inline-block;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    margin: 50px;
+    
+}
+
+.quienesSomos_quienesSomos {
+    background-color: #93b3b1;
+    color:white;
+    line-height: 160%;
+    font-size: 100%;
+    width: 1400px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.quienesSomos_titulo {
+    margin-bottom: 15px;
+}
+
+/*QUE HACEMOS*/
+.queHacemos_main {
+    background-color: #566968;
+    width: 1825px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quehacemos_seccion {
+    background-color: #93b3b1;
+    color:white;
+    line-height: 160%;
+    font-size: 100%;
+    display: inline-block;
+    justify-content:space-evenly;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    margin: 50px;
+}
+
+.quienesSomos_titulo {
+    margin-bottom: 15px;
+}
+
+/*NOVEDADES*/
+
+.grid_novedades {
+    background-color: #566968;
+    width: 1825px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 608px 608px 608px;
+    grid-template-rows: 400px;
+    grid-template-areas: 
+    "ele1 ele2 ele3" 
+    "ele4 ele5 ele6" ; 
+    
+}
+
+.noticia1{
+    grid-area: ele1;
+}
+.noticia2{
+    grid-area: ele2;
+}
+
+.noticia3 {
+    grid-area: ele3;
+}
+
+.noticia4 {
+    grid-area: ele4;
+}
+.noticia5 { 
+    grid-area: ele5;
+}
+
+.noticia6 {
+    grid-area: ele6;
+}
+
+
+.noticia_titulo {
+    font-size: 30px;
+    color: #2b2b2b;
+    width: 500px;
+    height: 70px;
+    padding: 15px;
+    margin: 15px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.noticia_parrafo{
+    font-size: 25px;
+    color: #2b2b2b;
+    width: 500px;
+    height: 250px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*CONTACTO*/
+
+.contacto_main{
+    background-color: #566968;
+    width: 1825px;
+    height: 800px;
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: left;
+}
+
+.contacto_seccion {
+    margin-left: 50px;
+    color:white;
+}
+
+.contacto_texto1 {
+    font-size: 60px;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.contacto_texto2 {
+    font-size: 25px;
+    margin: 30px;
+}
+
+.contacto_form {
+    margin: 30px;
+    font-size: 25px;
+    line-height: 160%;
+    text-align: left;
+    color: white;
+    display: inline-block
+}
+
+.contacto_boton {
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    margin-top: 1rem;
+    font-size: 17px;
+    border-radius: 20%;
+    margin-right: 6rem;
+    border: none;
+    color: beige;
+}
+
+/*DONA*/
+
+.grid_dona {
+    background-color: #566968;
+    width: 1825px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1100px 725px;
+    grid-template-rows: 500px 300px;
+    grid-template-areas: 
+    "ele1 ele2" 
+    "ele1 ele3" ; 
+}
+
+.textodona {
+    grid-area: ele1;
+}
+
+.dona_titulo {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 150px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+
+.dona_texto {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 990px;
+    height: 180px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+
+.donaciondona {
+    grid-area: ele2;
+}
+
+.donacion {
+    grid-area: ele1;
+    color: white;
+    font-size: 30px;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 30px; 
+}
+
+.formdona {
+    grid-area: ele3;
+}
+
+.caja {
+    padding: 10px;
+}
+.dona_boton{
+    background-color: green;
+    font-size: 25px;
+    width: 180px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    border-radius: 20%;
+    border: none;
+    color: beige;
+}
+
+.boton_position {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+@media screen and (max-width:1023px) {
+.header {
+    max-width: 1023px;
+    justify-content: space-between;
+}
+
+.header_menu {
+    font-size: 20px;  
+}
+
+.header_logo {
+    width: 200px;
+    height: 100px;
+}
+
+.header_boton {
+    margin: 1rem;
+}
+
+
+.main_home {
+    max-width: 1023px;
+}
+.main_home_lema {
+    font-size: 70px;
+}
+
+.footer{
+    max-width: 1023px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:top;
+}
+
+.quienesSomos_main {
+    width: 1023px;
+    height: 1200px;
+}
+
+.quienesSomos_quienesSomos {
+    width: 900px;
+}
+
+
+.queHacemos_main {
+    width: 1023px;
+    height: 600px;
+} 
+
+.grid_novedades {
+    width: 1023px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 298px 298px 298px;
+    grid-template-rows: 300px 300px; 
+    grid-template-areas: 
+    "ele1 ele2 ele3"
+    "ele4 ele5 ele6"; 
+}
+.noticia_titulo {
+    font-size: 20px;
+    width: 400px;
+    height: 70px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.noticia_parrafo{
+    font-size: 15px;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 25px;
+
+}
+
+.contacto_main{
+    max-width: 1023px;
+    height: 500px;
+}
+.contacto_texto1 {
+    font-size: 40px;
+}
+
+.contacto_texto2 {
+    font-size: 20px;
+}
+
+.contacto_form {
+    font-size: 20px;}
+
+
+.grid_dona {
+    width: 1023px;
+    height: 1100px;
+    display: grid;
+    grid-template-columns:599px;
+    grid-template-rows: 400px 400px 500px;
+    grid-template-areas: 
+    "ele1"
+    "ele2" 
+    "ele3" ; 
+}
+
+.dona_titulo {
+    font-size: 30px;
+    height: 70px;
+
+}
+
+.dona_texto {
+    font-size: 20px;
+    width: 500px;
+    height: 180px;
+}
+
+}
+
+@media screen and (max-width:599px) {
+    .header {
+        max-width: 599px;
+        height: 100px;
+    }  
+
+    .header_menu {
+        font-size: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        list-style: none
+        
+    }
+
+    .menu_hidden {
+        display: none;
+    }
+
+    .cruz_hidden {
+        display: block;
+    }
+    .menu_escondido {
+        display: block;
+        font-size: 100px;
+        color: white;
+        text-decoration: none;
+    }
+    #menu {
+        display: block;
+        background-color: rgb(19, 17, 17);
+        width: 40%;
+        height: 110vh;
+        position: fixed;
+        top: 0%;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+    }
+
+    #menu:target { 
+        left: 0;
+    }
+
+    .nav_lista {
+        flex-direction: column;
+    }
+    .main_home {
+        width: 599px;
+    }
+    .main_home_lema {
+        font-size: 45px; 
+    }
+
+    .footer{
+        width: 599px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quienesSomos_main {
+        width: 599px;
+        height: 1200px;
+    }
+
+    .quienesSomos_quienesSomos {
+        width: 500px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+    .quienesSomos_miViVa {
+        width: 500px;
+        height: 200px;
+    }
+
+    .queHacemos_main {
+        width: 599px;
+        height: 1100px;
+        display: inline-block;
+    }
+    
+    .quehacemos_seccion {
+        width: 400px;
+        height: 250px;
+
+    }
+    
+    .grid_novedades {
+        width: 599px;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 298px 298px;
+        grid-template-rows: 300px 300px 300px; 
+        grid-template-areas: 
+        "ele1 ele2"
+        "ele3 ele4" 
+        "ele5 ele6"; 
+    }
+    .noticia_titulo {
+        font-size: 20px;
+        width: 400px;
+        height: 70px;
+        padding: 5px;
+        margin: 5px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .noticia_parrafo{
+        font-size: 15px;
+        width: 200px;
+        height: 250px;
+        padding: 5px;
+        margin: 5px;
+        margin-left: 25px;
+
+    }
+
+    .contacto_main{
+        max-width: 599px;
+        height: 500px;
+    }
+    .contacto_texto1 {
+        font-size: 40px;
+    }
+    
+    .contacto_texto2 {
+        font-size: 20px;
+    }
+    
+    .contacto_form {
+        font-size: 20px;}
+
+  .grid_dona {
+    width: 599px;
+    height: 1100px;
+    display: grid;
+    grid-template-columns:599px;
+    grid-template-rows: 400px 400px 500px;
+    grid-template-areas: 
+    "ele1"
+    "ele2" 
+    "ele3" ; 
+}
+.dona_titulo {
+    font-size: 30px;
+    height: 70px;
+
+}
+
+.dona_texto {
+    font-size: 20px;
+    width: 500px;
+    height: 180px;
+}
+}
