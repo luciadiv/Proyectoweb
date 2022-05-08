@@ -11,9 +11,9 @@
 <body>
     <body>
         <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
-                <div>
-                   <a href="index.html"><img class="header_logo" src="images/Logo_color.png" alt="Logotipo Verde"></a>
-                </div>
+                   <a href="index.html" class="header_logo_padre">
+                    <img  class="header_logo" src="images/Logo_color.png" alt="Logotipo Verde">
+                   </a>
                 <div>
                     <a href="#menu" class="menu_escondido">
                         <span class="jam jam-menu"></span>
@@ -21,15 +21,15 @@
                 </div>
                 <nav  class="menu_hidden"  id="menu"> 
                    <ul class="header_menu" class="nav_lista" >
-                       <li class="header_nav"><a class="header_link" href="pages/quienessomos.html">Quiénes somos</a></li>
-                       <li class="header_nav"><a class= "header_link" href="pages/quehacemos.html">Qué hacemos</a></li>
-                       <li class="header_nav"><a class= "header_link" href="pages/novedades.html">Novedades</a></li>
-                       <li class="headder_nav"><a class= "header_link" href="pages/contacto.html">Contacto</a></li>
+                       <li><a class="header_link" href="pages/quienessomos.html">Quiénes somos</a></li>
+                       <li><a class= "header_link" href="pages/quehacemos.html">Qué hacemos</a></li>
+                       <li><a class= "header_link" href="pages/novedades.html">Novedades</a></li>
+                       <li><a class= "header_link" href="pages/contacto.html">Contacto</a></li>
                        <li class="cruz_hidden" class="headder_nav"><a class= "header_link" href="#"><span class="jam jam-close" ></span></a></li>
                     </ul>
             </nav>
-                <div>
-                    <button class="header_boton"><a class="header_boton_link" href="pages/dona.html">Doná</a></button>
+                <div class="header_boton_animacion" class="header_boton_transition">
+                    <button class="header_boton" ><a class="header_boton_link" href="pages/dona.html">DONÁ</a></button>
                 </div>
            </header> <!--fin del header-->
         <main>
@@ -67,10 +67,10 @@
             </section>
             <section><!--REDES SOCIALES-->
                 <h4>Seguinos</h4>
-                <a href="https://www.facebook.com"><img class="footer_redes_img" src="/images/Facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com"><img class="footer_redes_img" src="/images/Instagram.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com"><img class="footer_redes_img" src="/images/LinkedIn.png" alt="LinkedIn"></a>
-                <a href="https://www.youtube.com"><img class="footer_redes_img" src="/images/YouTube.png" alt="YouTube"></a>
+                <a href="https://www.facebook.com"><img class="footer_redes_img" src="images/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img class="footer_redes_img" src="images/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com"><img class="footer_redes_img" src="images/LinkedIn.png" alt="LinkedIn"></a>
+                <a href="https://www.youtube.com"><img class="footer_redes_img" src="images/YouTube.png" alt="YouTube"></a>
             </section>            
     </footer>
     </body>

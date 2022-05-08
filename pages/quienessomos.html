@@ -10,9 +10,9 @@
 </head>
 <body>
     <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
-        <div>
-           <a href="../index.html"><img class="header_logo" src="../images/Logo_color.png" alt="Logotipo Verde"></a>
-        </div>
+        <a href="../index.html" class="header_logo_padre">
+            <img  class="header_logo" src="../images/Logo_color.png" alt="Logotipo Verde">
+           </a>
         <div>
             <a href="#menu" class="menu_escondido">
                 <span class="jam jam-menu"></span>
@@ -27,7 +27,7 @@
                <li class="headder_nav"><a class= "header_link" href="#"><span class="jam jam-close"></span></a></li>
             </ul>
     </nav>
-        <div>
+        <div class="header_boton_animacion" class="header_boton_transition">
             <button class="header_boton"><a class="header_boton_link" href="../pages/dona.html">Doná</a></button>
         </div>
    </header> <!--fin del header-->
