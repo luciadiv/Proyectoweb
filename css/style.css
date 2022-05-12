@@ -42,7 +42,6 @@ body {
     border-radius: 5px;   
     border: none;
     box-shadow: 0 5px 5px #1c5323;
-    
 }
   
 .header_boton_link {
@@ -59,8 +58,6 @@ body {
 }
 
 
-
-
 .header_menu {
     display: flex;
     flex-direction: row;
@@ -74,7 +71,6 @@ body {
     color: white;
     text-decoration: none;
 }
-
 
 
 
@@ -108,13 +104,13 @@ body {
     margin: 0px;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items:top;
+    justify-content:space-evenly;
+    
 }
 
 footer section {
-    padding: 10px;
-    margin: 30px;
+    width: 100%;
+    padding: 30px;
     font-size: 20px;
     line-height: 140%;
     text-align: left;
@@ -126,51 +122,32 @@ footer section {
     display: block
 }
 
-.footer_newsletter_boton {
-    background-color: green;
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    margin: 1rem;
-    font-size: 17px;
-    border-radius: 20%;
-    border: none;
-    color: beige;
+
+.footer_redes {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
 }
 
-.footer_redes_img {
-    width: 50px;
-    display: inline-block;
-}
 
 /*QUIENES SOMOS*/
 .quienesSomos_main {
     background-color: #566968;
-    width: 1825px;
-    height: 800px;
-    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    color: white;
+   
 }
 
-.quienesSomos_miViVa {
-    background-color: #93b3b1;
-    color:white;
-    line-height: 160%;
-    font-size: 100%;
-    display: inline-block;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 400px;
-    padding: 30px;
-    margin: 50px;
-    
-}
+
 
 .quienesSomos_quienesSomos {
     background-color: #93b3b1;
     color:white;
     line-height: 160%;
     font-size: 100%;
-    width: 1400px;
+    width: 100%;
     height: 150px;
     margin-left: 50px;
     margin-top: 50px;
@@ -181,91 +158,26 @@ footer section {
     margin-bottom: 15px;
 }
 
-/*QUE HACEMOS*/
-.queHacemos_main {
-    background-color: #566968;
-    width: 1825px;
-    height: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.quehacemos_seccion {
+.contenedor {
     background-color: #93b3b1;
-    color:white;
-    line-height: 160%;
-    font-size: 100%;
-    display: inline-block;
-    justify-content:space-evenly;
-    width: 400px;
-    height: 400px;
-    padding: 30px;
-    margin: 50px;
+    padding: 15px;
+    margin: 2%;
+    flex: 1 0 0%
 }
 
-.quienesSomos_titulo {
-    margin-bottom: 15px;
-}
 
 /*NOVEDADES*/
-
-.grid_novedades {
-    background-color: #566968;
-    width: 1825px;
-    height: 800px;
-    display: grid;
-    grid-template-columns: 608px 608px 608px;
-    grid-template-rows: 400px;
-    grid-template-areas: 
-    "ele1 ele2 ele3" 
-    "ele4 ele5 ele6" ; 
-    
-}
-
-.noticia1{
-    grid-area: ele1;
-}
-.noticia2{
-    grid-area: ele2;
-}
-
-.noticia3 {
-    grid-area: ele3;
-}
-
-.noticia4 {
-    grid-area: ele4;
-}
-.noticia5 { 
-    grid-area: ele5;
-}
-
-.noticia6 {
-    grid-area: ele6;
-}
 
 
 .noticia_titulo {
     font-size: 30px;
     color: #2b2b2b;
-    width: 500px;
-    height: 70px;
-    padding: 15px;
-    margin: 15px;
-    margin-top: 30px;
-    margin-left: 25px;
+    padding: 10px;
 }
 .noticia_parrafo{
-    font-size: 25px;
+    font-size: 15px;
     color: #2b2b2b;
-    width: 500px;
-    height: 250px;
-    padding: 15px;
-    margin: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 3px;
 }
 
 
@@ -273,8 +185,7 @@ footer section {
 
 .contacto_main{
     background-color: #566968;
-    width: 1825px;
-    height: 800px;
+    width: 100%;
     display: flex;
     flex-direction:column;
     justify-content: start;
@@ -282,51 +193,30 @@ footer section {
 }
 
 .contacto_seccion {
-    margin-left: 50px;
+    padding: 30px;
     color:white;
 }
 
 .contacto_texto1 {
     font-size: 60px;
-    margin: 10px;
-    margin-top: 100px;
+    padding: 10px;
 }
 
 .contacto_texto2 {
     font-size: 25px;
-    margin: 30px;
+    padding: 10px;
 }
 
-.contacto_form {
-    margin: 30px;
-    font-size: 25px;
-    line-height: 160%;
-    text-align: left;
-    color: white;
-    display: inline-block
-}
 
-.contacto_boton {
-    background-color: green;
-    width: 100px;
-    height: 40px;
-    margin-top: 1rem;
-    font-size: 17px;
-    border-radius: 20%;
-    margin-right: 6rem;
-    border: none;
-    color: beige;
-}
 
 /*DONA*/
 
 .grid_dona {
     background-color: #566968;
-    width: 1825px;
-    height: 800px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1100px 725px;
-    grid-template-rows: 500px 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "ele1 ele2" 
     "ele1 ele3" ; 
@@ -342,12 +232,7 @@ footer section {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 150px;
-    padding: 20px;
-    margin-left: 30px;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    margin-right: 60px;
+    padding: 40px;
 }
 
 .dona_texto {
@@ -356,52 +241,21 @@ footer section {
     display: flex;
     display: inline-block;
     flex-wrap: wrap;
-    width: 990px;
-    height: 180px;
-    padding: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 60px;
+    width: 90%;
+    padding: 40px;
 }
+
 
 .donaciondona {
     grid-area: ele2;
 }
 
-.donacion {
-    grid-area: ele1;
-    color: white;
-    font-size: 30px;
-    width: 400px;
-    height: 50px;
-    padding: 10px;
-    margin-left: 30px; 
-}
+
 
 .formdona {
     grid-area: ele3;
 }
 
-.caja {
-    padding: 10px;
-}
-.dona_boton{
-    background-color: green;
-    font-size: 25px;
-    width: 180px;
-    height: 50px;
-    margin-top: 2rem;
-    margin-right: 6rem;
-    border-radius: 20%;
-    border: none;
-    color: beige;
-}
-
-.boton_position {
-    display: flex;
-    justify-content:space-evenly;
-}
 
 @media screen and (max-width:1023px) {
 .header {
@@ -436,15 +290,6 @@ footer section {
     flex-direction: row;
     justify-content:space-around;
     align-items:top;
-}
-
-.quienesSomos_main {
-    width: 1023px;
-    height: 1200px;
-}
-
-.quienesSomos_quienesSomos {
-    width: 900px;
 }
 
 
@@ -483,9 +328,9 @@ footer section {
 }
 
 .contacto_main{
-    max-width: 1023px;
-    height: 500px;
+    max-width: 100%;
 }
+   
 .contacto_texto1 {
     font-size: 40px;
 }
@@ -499,10 +344,9 @@ footer section {
 
 
 .grid_dona {
-    width: 1023px;
-    height: 1100px;
+    width: 100%;
     display: grid;
-    grid-template-columns:599px;
+    grid-template-columns:100%;
     grid-template-rows: 400px 400px 500px;
     grid-template-areas: 
     "ele1"
@@ -512,14 +356,12 @@ footer section {
 
 .dona_titulo {
     font-size: 30px;
-    height: 70px;
 
 }
 
 .dona_texto {
     font-size: 20px;
-    width: 500px;
-    height: 180px;
+    width: 90%;
 }
 
 }
@@ -538,6 +380,8 @@ footer section {
         list-style: none
         
     }
+
+    
 
     .menu_hidden {
         display: none;
@@ -584,20 +428,13 @@ footer section {
         flex-direction: column;
     }
 
-    .quienesSomos_main {
-        width: 599px;
-        height: 1200px;
-    }
 
     .quienesSomos_quienesSomos {
         width: 500px;
         height: 200px;
         margin-bottom: 50px;
     }
-    .quienesSomos_miViVa {
-        width: 500px;
-        height: 200px;
-    }
+   
 
     .queHacemos_main {
         width: 599px;
@@ -642,8 +479,8 @@ footer section {
     }
 
     .contacto_main{
-        max-width: 599px;
-        height: 500px;
+        max-width: 100%;
+
     }
     .contacto_texto1 {
         font-size: 40px;
@@ -657,26 +494,26 @@ footer section {
         font-size: 20px;}
 
   .grid_dona {
-    width: 599px;
-    height: 1100px;
+    width: 100%;
     display: grid;
-    grid-template-columns:599px;
-    grid-template-rows: 400px 400px 500px;
+    grid-template-columns:100%;
+    grid-template-rows: 30% 25% 45%;
     grid-template-areas: 
     "ele1"
     "ele2" 
     "ele3" ; 
 }
 .dona_titulo {
-    font-size: 30px;
-    height: 70px;
-
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
 }
 
 .dona_texto {
-    font-size: 20px;
-    width: 500px;
-    height: 180px;
-}
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
 }
 
+
+}
