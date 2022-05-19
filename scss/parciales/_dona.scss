@@ -1,0 +1,45 @@
+
+.grid_dona {
+    background-color: $background2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "ele1 ele2" 
+    "ele1 ele3" ; 
+}
+
+.textodona {
+    grid-area: ele1;
+}
+
+.dona_titulo {
+    color: $tipografia;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 40px;
+}
+
+.dona_texto {
+    color: $tipografia;
+    font-size: 30px;
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 40px;
+}
+
+
+.donaciondona {
+    grid-area: ele2;
+}
+
+
+
+.formdona {
+    grid-area: ele3;
+}

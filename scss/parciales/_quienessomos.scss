@@ -1,0 +1,32 @@
+.quienesSomos_main {
+    background-color: $background2;
+    width: 100%;
+    padding: 30px;
+    color: $tipografia;
+   
+}
+
+
+
+.quienesSomos_quienesSomos {
+    background-color: $background;
+    color: $tipografia;
+    line-height: 160%;
+    font-size: 100%;
+    width: 100%;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.quienesSomos_titulo {
+    margin-bottom: 15px;
+}
+
+.contenedor {
+    background-color: $background;
+    padding: 15px;
+    margin: 2%;
+    flex: 1 0 0%
+}

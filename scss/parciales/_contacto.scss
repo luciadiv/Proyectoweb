@@ -1,0 +1,24 @@
+.contacto_main{
+    background-color: $background2;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: left;
+
+    &_seccion {
+    padding: 30px;
+    color:$tipografia;
+}
+
+    &_texto1 {
+    font-size: 60px;
+    padding: 10px;
+}
+
+    &_texto2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+}

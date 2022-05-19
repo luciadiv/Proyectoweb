@@ -1,0 +1,16 @@
+.main_home {
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/humedales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_lema {
+    color: $tipografia;
+    font-size: 100px;
+}
+}

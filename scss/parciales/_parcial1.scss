@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a:link, a:hover {
+    text-decoration: none;
+    color: $tipografia;
+}
+
+input:invalid {
+    border-color: #C00000;
+    background-color: #c0000036;
+  }
