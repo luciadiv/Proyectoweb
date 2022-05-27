@@ -1,4 +1,4 @@
-.footer{
+.footer {
     background-color: rgba(0, 0, 0,0.8); 
     max-width: 100%;
     height: 300%;
@@ -8,7 +8,16 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    
+
+        section {
+        width: 100%;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: left;
+        color: white;
+        display: inline-block
+}
 
 
     &_contacto_linea {
@@ -22,4 +31,19 @@
     font-size: 150%;
 }
 
+}
+
+$redes: (
+    facebook: blue,
+    instagram: purple,
+    linkedin: rgb(149, 204, 223),
+    youtube: red,
+);
+
+
+@each $clave, $valor in $redes  {
+    .SM--#{$clave} {
+        color: $valor;
+        text-decoration: none;
+    }
 }

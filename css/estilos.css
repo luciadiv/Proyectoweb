@@ -25,18 +25,6 @@ input:invalid {
   color: white;
 }
 
-.quienesSomos_quienesSomos {
-  background-color: #93b3b1;
-  color: white;
-  line-height: 160%;
-  font-size: 100%;
-  width: 100%;
-  height: 150px;
-  margin-left: 50px;
-  margin-top: 50px;
-  padding: 30px;
-}
-
 .quienesSomos_titulo {
   margin-bottom: 15px;
 }
@@ -60,21 +48,57 @@ input:invalid {
   padding: 3px;
 }
 
-.main_home {
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
   max-width: 100%;
-  height: 800px;
+  height: 300%;
+  padding: 10px;
+  border: 0px;
+  margin: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/humedales.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.main_home_lema {
+.footer section {
+  width: 100%;
+  padding: 30px;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: left;
   color: white;
-  font-size: 100px;
+  display: inline-block;
+}
+
+.footer_contacto_linea {
+  display: block;
+}
+
+.footer_redes {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.SM--facebook {
+  color: blue;
+  text-decoration: none;
+}
+
+.SM--instagram {
+  color: purple;
+  text-decoration: none;
+}
+
+.SM--linkedin {
+  color: #95ccdf;
+  text-decoration: none;
+}
+
+.SM--youtube {
+  color: red;
+  text-decoration: none;
 }
 
 .header {
@@ -144,29 +168,6 @@ input:invalid {
   display: none;
 }
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  max-width: 100%;
-  height: 300%;
-  padding: 10px;
-  border: 0px;
-  margin: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.footer_contacto_linea {
-  display: block;
-}
-
-.footer_redes {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  font-size: 150%;
-}
-
 .grid_dona {
   background-color: #566968;
   width: 100%;
@@ -229,6 +230,23 @@ input:invalid {
 .contacto_main_texto2 {
   font-size: 25px;
   padding: 10px;
+}
+
+.main_home {
+  max-width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/humedales.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_home_lema {
+  color: white;
+  font-size: 100px;
 }
 
 @media screen and (max-width: 1023px) {
