@@ -1,7 +1,6 @@
 .footer {
     background-color: rgba(0, 0, 0,0.8); 
-    max-width: 100%;
-    height: 300%;
+    @include sizes (100%,300%);
     padding: 10px;
     border: 0px;
     margin: 0px;
@@ -46,4 +45,9 @@ $redes: (
         color: $valor;
         text-decoration: none;
     }
+}
+
+.btn_suscribirse {
+    @extend .btn_send;
+    color: black;
 }

@@ -2,4 +2,30 @@ $tipografia: white;
 
 $background: #93b3b1;
 
-$background2: #566968;
+$background2: rgb(243, 246, 249);
+
+
+$estilos:(
+    background-color: white,
+    border-radius: 5%,
+    border: 1px solid #212529,
+    color: #212529,
+    padding: 15px,
+    margin: 2%,
+    flex: 1 0 0%,
+);
+
+$estilos_hover: (
+    background-color: rgba(2, 105, 42, 0.747),
+    border: 1px solid white,
+    color: white,
+);
+
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+
+

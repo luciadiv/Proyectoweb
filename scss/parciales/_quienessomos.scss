@@ -1,20 +1,45 @@
 .quienesSomos_main {
-    background-color: $background2;
+    background-color: map-get($estilos,background-color);
     width: 100%;
     padding: 30px;
-    color: $tipografia;
+    color: black;
    
-}
-
-
-
-.quienesSomos_titulo {
+        &_titulo {
     margin-bottom: 15px;
 }
 
-.contenedor {
-    background-color: $background;
-    padding: 15px;
-    margin: 2%;
-    flex: 1 0 0%
 }
+
+.contenedor {
+    background-color: map-get($estilos,background-color);
+    border-radius:map-get($estilos,border-radius);
+    border: map-get($estilos,border);
+    color: map-get($estilos,color);
+    padding: map-get($estilos,padding);
+    margin: map-get($estilos,margin);
+    flex: map-get($estilos,flex);
+
+
+ &_1 {
+    background-color: map-get($estilos,background-color);
+    border: map-get($estilos,border);
+    color: map-get($estilos,color);
+    padding: map-get($estilos,padding);
+    margin: map-get($estilos,margin);
+    flex: map-get($estilos,flex);
+}
+}
+
+.contenedor:hover {
+    background-color: map-get($estilos_hover,background-color);
+    border: map-get($estilos_hover,border);
+    color: map-get($estilos_hover,color);
+
+}
+
+.contenedor_1:hover {
+    background-color: map-get($estilos_hover,background-color);
+    border: map-get($estilos_hover,border);
+    color: map-get($estilos_hover,color);
+}
+

@@ -1,6 +1,5 @@
 .main_home {
-    max-width: 100%;
-    height: 800px;
+    @include sizes (100%,800px);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -8,7 +8,7 @@
 
     &_seccion {
     padding: 30px;
-    color:$tipografia;
+    color:map-get($estilos,color);
 }
 
     &_texto1 {
@@ -20,5 +20,19 @@
     font-size: 25px;
     padding: 10px;
 }
+
+}
+
+.btn_send {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+
+}
+
+.btn_send:hover {
+  color: #fff;
+  background-color: #136b42;
+  border-color: #136b42;
 
 }
