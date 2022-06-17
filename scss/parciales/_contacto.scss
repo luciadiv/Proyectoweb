@@ -1,38 +1,44 @@
 .contacto_main{
-    background-color: $background2;
-    width: 100%;
+    background-image: url(../images/6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:map-get($main,width);
+    padding:map-get($main,padding);
     display: flex;
     flex-direction:column;
     justify-content: start;
     align-items: left;
 
     &_seccion {
-    padding: 30px;
-    color:map-get($estilos,color);
+        color:map-get($estilos,color);
 }
 
     &_texto1 {
     font-size: 60px;
     padding: 10px;
+    color: $tipografia;
+    background-color: #0f621163;
+    width: fit-content;
 }
 
     &_texto2 {
     font-size: 25px;
     padding: 10px;
+    color: $tipografia;
+    background-color: #0f621163;
+    width: fit-content;
 }
 
 }
 
 .btn_send {
-    color: #fff;
-    background-color: #198754;
-    border-color: #198754;
-
+    @extend .btn_send;
 }
 
-.btn_send:hover {
-  color: #fff;
-  background-color: #136b42;
-  border-color: #136b42;
-
+.label {
+    margin-bottom: 0.5rem;
+    color: $tipografia;
+    font-weight: 500;
+    background-color: #0f621163;
+    width: fit-content;
 }

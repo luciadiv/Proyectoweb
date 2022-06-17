@@ -1,15 +1,17 @@
-.main_home {
-    @include sizes (100%,800px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/humedales.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.carousel_img {
+    @include sizes (100%,80%);
 
     &_lema {
-    color: $tipografia;
-    font-size: 100px;
+    font-size: 50px;
+    }
+
+    &_texto {
+    font-size: 20px;
 }
 }
+
+
+
+
+   

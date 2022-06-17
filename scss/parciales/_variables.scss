@@ -1,24 +1,49 @@
-$tipografia: white;
+
+
+$tipografia: whitesmoke;
+
+$tipografia2: rgb(15, 15, 15);
 
 $background: #93b3b1;
 
 $background2: rgb(243, 246, 249);
 
 
+
+$link:(
+    color: $tipografia,
+    font-size: 20px,
+    font-weight:400,
+    text-decoration: none,
+);
+
+
+
 $estilos:(
-    background-color: white,
-    border-radius: 5%,
+    background-image: linear-gradient(to bottom,  #ece9e6e8, #ffffffde),
     border: 1px solid #212529,
-    color: #212529,
+    color: $tipografia2,
     padding: 15px,
     margin: 2%,
     flex: 1 0 0%,
 );
 
+
+
 $estilos_hover: (
-    background-color: rgba(2, 105, 42, 0.747),
-    border: 1px solid white,
-    color: white,
+    background-image: linear-gradient(to right,  #53c234c0, #061700c5),
+    border: none,
+    color: $tipografia,
+);
+
+$main: (
+    background-image: url(../images/background1.png),
+    background-repeat:no-repeat,
+    background-size:contain,
+    background-position:right bottom,
+    width: 100%,
+    padding: 30px,
+    color: $tipografia2,
 );
 
 
@@ -27,5 +52,47 @@ $estilos_hover: (
     width: $width;
 }
 
+.btn_send {
+    color: $tipografia;
+    background-color: #198754;
+    border-color: #198754;
+
+}
+
+.btn_send:hover {
+  color: $tipografia;
+  background-color: #136b42;
+  border-color: #136b42;
+
+}
+
+.caja {
+    background-image: map-get($estilos,background-image);
+    border: map-get($estilos,border);
+    color: map-get($estilos,color);
+    padding: map-get($estilos,padding);
+    margin: map-get($estilos,margin);
+    flex: map-get($estilos,flex);
+    animation-name: animacion;
+    animation-duration: 1s;
+}
+ 
 
 
+.caja:hover {
+    background-image: map-get($estilos_hover,background-image);
+    border: map-get($estilos_hover,border);
+    color: map-get($estilos_hover,color);
+
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
+    
+    }

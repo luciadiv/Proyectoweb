@@ -1,22 +1,28 @@
 .footer {
-    background-color: rgba(0, 0, 0,0.8); 
+    background-color: #000; 
     @include sizes (100%,300%);
     padding: 10px;
     border: 0px;
     margin: 0px;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
 
         section {
         width: 100%;
-        padding: 30px;
-        font-size: 20px;
+        padding: 20px;
+        font-size: 14px;
         line-height: 140%;
         text-align: left;
-        color: white;
-        display: inline-block
-}
+        color: $tipografia;
+        display: inline-block;
+        border-right-color: rgba(255, 255, 255, 0.288);
+        border-right-style: ridge;
+        }
+    
+    &_titulo {
+        font-size: 17px;
+    }
+
 
 
     &_contacto_linea {
@@ -28,26 +34,12 @@
     color: $tipografia;
     text-decoration: none;
     font-size: 150%;
+    padding: 2px;
 }
 
 }
 
-$redes: (
-    facebook: blue,
-    instagram: purple,
-    linkedin: rgb(149, 204, 223),
-    youtube: red,
-);
-
-
-@each $clave, $valor in $redes  {
-    .SM--#{$clave} {
-        color: $valor;
-        text-decoration: none;
-    }
-}
 
 .btn_suscribirse {
     @extend .btn_send;
-    color: black;
 }

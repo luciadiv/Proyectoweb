@@ -1,25 +1,25 @@
 
 @media screen and (max-width:1023px) {
     .header {
-        max-width: 100%;
-        height: 100%;
-        padding: 1%;
-        justify-content: space-between;
     
-    
-        &_menu {
-        font-size: 15px;  
-        margin-top: 0px;
-    }
     
         &_logo {
-        width: 100%;
-        
-            &_2 {
-                @include sizes (40%,40%);
+        width: 110%;
         }
-    }
-    
+
+        &_menu {
+        gap: 20px;
+        }
+
+        &_link {
+        font-size: 15px;
+        
+
+        &:hover {
+        text-decoration: none;
+        }
+}
+ 
         &_boton {
         margin: auto;
         margin-right: 2px;
@@ -28,110 +28,49 @@
     }
         
 }
-    .main_home {
-        @include sizes (100%,600px);
-           
-            &_lema {
-             font-size: 70px;
-             padding-left: 10%;
-            padding-right: 10%;
-             }
-    }
-            
-            
+                  
     .footer{
         max-width: 100%;
-        display: flex;
-        flex-direction: row;
         justify-content:space-around;
-        align-items:top;
+
     }
-    
-    
-    .queHacemos_main {
-        @include sizes (1023px,600px);
-        } 
-    
-    .grid_novedades {
-        @include sizes (1023px,600px);
-        display: grid;
-        grid-template-columns: 298px 298px 298px;
-        grid-template-rows: 300px 300px; 
-        grid-template-areas: 
-        "ele1 ele2 ele3"
-        "ele4 ele5 ele6"; 
-    }
-    .noticia_titulo {
-        font-size: 20px;
-        @include sizes (400px,70px);
-        padding: 5px;
-        margin: 5px;
-        margin-top: 30px;
-        margin-left: 25px;
-    }
-    .noticia_parrafo{
-        font-size: 15px;
-        @include sizes (200px,250px);
-        padding: 5px;
-        margin: 5px;
-        margin-left: 25px;
-    
-    }
-    
+     
+       
     .contacto_main{
         max-width: 100%;
-    }
-       
-    .contacto_texto1 {
+             
+         &_texto1 {
         font-size: 40px;
-    }
-    
-    .contacto_texto2 {
-        font-size: 20px;
-    }
-    
-    .contacto_form {
-        font-size: 20px;}
-    
-    
-    .dona_grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns:100%;
-        grid-template-rows: 30% 35% 30%;
-        grid-template-areas: 
-        "ele1"
-        "ele2" 
-        "ele3" ; 
-      
-        &_titulo {
-        font-size: 30px;
         }
     
-        &_texto {
+         &_texto2 {
         font-size: 20px;
-        width: 90%;
+        }
     }
 
+    .form-label {
+    color: $tipografia;
+    }
+
+    .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ele1 ele2";
 }
-    
+
     }
     
     @media screen and (max-width:599px) {
        
         .header {
-            max-width: 100%;
-            height: 100%;
-            justify-content: space-around;
-         
-    
-            &_menu {
-            font-size: 12px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
-            margin-right: 12px;
+
+        &_menu {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: left;
         }
             
     
@@ -144,152 +83,131 @@
         &_logo {
             @include sizes (200%,100%);
             
-            &_2 {
-                @include sizes (100%,100%);
-            }
+        }
+
+        &_open {
+            display: block;
+            font-size: 40px;
+            color: $tipografia;
+            text-decoration: none;
+        }
+
+        &_link {
+            font-size: 20px;
         }
     }
     
-        .menu_hidden {
-            display: none;
-        }
-    
+          
         .cruz_hidden {
             display: block;
         }
-        .menu_escondido {
-            display: block;
-            font-size: 60px;
-            color: white;
-            text-decoration: none;
-        }
+        
         #menu {
             display: block;
-            background-color: rgb(19, 17, 17);
-            width: 40%;
-            height: 110vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            @include sizes (70%,100vh); 
             position: fixed;
             top: 0%;
             left: -100%;
             z-index: 100;
             transition: left 1s;
-        }
-    
-        #menu:target { 
+        &:target { 
             left: 0;
         }
     
-        .nav_lista {
-            flex-direction: column;
+    }
+        .carousel_img_lema {
+                font-size: 15px; 
         }
     
-        .main_home {
-            max-width: 100%;
-        
-                &_lema {
-                font-size: 45px; 
-        }
-    }
+
     
         .footer{
             max-width: 100%;
             display: flex;
             flex-direction: column;
-        }
-    
-    
-        .quienesSomos_quienesSomos {
-            @include sizes (500px,200px);
-            margin-bottom: 50px;
-        }
-    
-        .row {
-           flex-direction: column;
-            
-        }
-    
-        .queHacemos_main {
-            @include sizes (599px,1100px);
-            display: inline-block;
-        }
         
-        .quehacemos_seccion {
-            @include sizes (400px,250px);  
-        }
-        
-        .grid_novedades {
-            @include sizes (599px,1000px);
-            display: grid;
-            grid-template-columns: 298px 298px;
-            grid-template-rows: 300px 300px 300px; 
-            grid-template-areas: 
-            "ele1 ele2"
-            "ele3 ele4" 
-            "ele5 ele6"; 
-        }
-        .noticia_titulo {
-            font-size: 20px;
-            @include sizes (100%,70px);
-            padding: 5px;
-            margin: 5px;
-            margin-top: 30px;
-            margin-left: 25px;
-        }
-        .noticia_parrafo{
-            font-size: 15px;
-            @include sizes (200px,250px);
-            padding: 5px;
-            margin: 5px;
-            margin-left: 25px;
-    
-        }
-    
-        .contacto_main{
-            max-width: 100%;
-    
-        }
-        .contacto_texto1 {
-            font-size: 40px;
-        }
-        
-        .contacto_texto2 {
-            font-size: 20px;
-        }
-        
-        .contacto_form {
-            font-size: 20px;}
-    
-      .dona_grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns:100%;
-        grid-template-rows: 30% 25% 45%;
-        grid-template-areas: 
-        "ele1"
-        "ele2" 
-        "ele3" ; 
-    
-                &_titulo {
-                font-size: 20px;
-                width: 100%;
-                padding: 10px;
-                }
-    
-                &_texto {
-                font-size: 15px;
-                width: 100%;
-                padding: 10px;
-                }
-
-                &_form {
-                    align-self: self-end;
-                    margin-top: 60px;
-                }
-            
-
+            section {
+            font-size: 12px;
+            border-right-style: none;
+            border-bottom-style: groove;
+            border-right-color: none;
             }
 
-   
+            &_titulo {
+                font-size: 14px;
+            }
+
+            &_redes {
+                font-size: 130%;
+            }
+        }
+
+        .btn_suscribirse {
+            transform: scale(0.7, 0.7)
+            
+        }
+
+        .inputsize {
+            transform: scale(1,1)
+        }
+        
+        
+            
+        .row {
+           flex-direction: column;
+           --bs-gutter-x: 0;
+        }
+
+        .contacto_main{
+            max-width: 100%;
+            padding: 20px;
+    
+        &_seccion {
+            padding: 0px;
+        }
+
+        &_texto1 {
+            font-size: 30px;
+        }
+
+        &_texto2 {
+            font-size: 20px;
+        }
+        
+        }
+        
+
+        .grid_dona {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "ele1"
+        "ele2";
+
+        &_hijo1{
+            background-image: none;
+        }
+    
+        &_hijo2 {
+        grid-area: ele2;
+        padding: 1rem;
+        background-image: map-get($main,background-image);
+        background-repeat:map-get($main,background-repeat);
+        background-size:map-get($main,background-size);
+        background-position: bottom right;
+        }
+
+         &_titulo {
+        font-size: 20px;
+        }
+    
+        &_texto {
+        font-size: 15px;
+        }
+}
+
+
     }
 
     

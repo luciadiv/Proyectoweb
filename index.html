@@ -6,81 +6,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Verde es una institución orientada a concientizar sobre los efectos del cambio climático en los ecosistemas y generar acciones para impedir el deterioro del ambiente">
         <meta name="keyword" content="naturaleza, argentina, humedales, biologia, ecosistemas, biodiversidad, contaminación, medioambiente">
+        <link rel="icon" type="imageicon" href="../images/Logo-mini.png">
         <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Verde | Home</title>
         <link rel="stylesheet" href="css/estilos.css"/>
     </head>
     <body>
-        <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
-            <a href="index.html" class="header_logo_padre">
+        <header class="header"> <!--header: logo linkeado + menu  + boton-->
+            <a class="header_marca" href="index.html">
              <img  class="header_logo" src="images/Logo_color.png" alt="Logotipo Verde">
             </a>
-         <div>
-             <a href="#menu" class="menu_escondido">
+            <a href="#menu" class="header_open">
                  <span class="jam jam-menu"></span>
              </a>
-         </div>
-         <nav  class="menu_hidden"  id="menu"> 
-            <ul class="header_menu" class="nav_lista" >
+            <nav id="menu"> 
+            <ul class="header_menu">
                 <li><a class="header_link" href="pages/quienessomos.html">Quiénes somos</a></li>
                 <li><a class= "header_link" href="pages/quehacemos.html">Qué hacemos</a></li>
                 <li><a class= "header_link" href="pages/novedades.html">Novedades</a></li>
                 <li><a class= "header_link" href="pages/contacto.html">Contacto</a></li>
-                <li class="cruz_hidden" class="headder_nav"><a class= "header_link" href="#"><span class="jam jam-close" ></span></a></li>
+                <li class="cruz_hidden"><a class= "header_link" href="#"><span class="jam jam-close" ></span></a></li>
              </ul>
-     </nav>
-         <div class="header_animacion">
-             <button  class="header_boton"><a class="header_link" href="pages/dona.html">DONÁ</a></button>
+            </nav>
+         <div>
+             <button  class="header_boton"><a class="header_boton_link" href="pages/dona.html">DONÁ</a></button>
          </div>
         </header> <!--fin del header-->
         <main>          
-            <section class="main_home"> <!--seccion principal que será un slider-->
-                <h1 class="main_home_lema"> Salvemos los humedales</h1>
+            <section> <!--seccion principal slider-->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div  class="carousel-item active">
+                        <img class="carousel_img" src="../images/humedales.jpg" class="d-block" alt="humedales">
+                        <div class="carousel-caption d-md-block">
+                          <h5 class="carousel_img_lema">Salvemos los humedales</h5>
+                          <p class="carousel_img_texto d-none d-md-block">Conocé cómo salvar los ecosistemas más importantes del país</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="carousel_img" src="../images/biodiversidad.jpg" class="d-block" alt="biodiversidad">
+                        <div class="carousel-caption d-md-block">
+                          <h5 class="carousel_img_lema">Día de la biodiversidad</h5>
+                          <p class="carousel_img_texto d-none d-md-block">Sumate a las acciones de concientización</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="carousel_img" src="../images/especies.jpg" class="d-block" alt="cambioclimatico">
+                        <div class="carousel-caption ">
+                          <h5 class="carousel_img_lema">Cambio Climático</h5>
+                          <p class="carousel_img_texto d-none d-md-block">Se conocieron nuevos datos sobre su impacto en las especies</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section><!--fin de la sección principal-->
-
         </main>
         <footer class="footer"><!--footer: contacto simple+ newsletter formulario + redes con enlaces-->
             <section> <!--CONTACTO-->               
-                <h4>Contacto</h4>
-                <span class="footer_contacto_linea">CABA, Argentina</span> 
-                <span class="footer_contacto_linea"> + 54 9 11 51199020</span>
+                <h4 class="footer_titulo">Contacto</h4>
+                <span class="footer_contacto_linea">Cerrito 1999, CABA, Argentina</span> 
+                <span class="footer_contacto_linea">Tel.: +5491151199020</span>
                 <span class="footer_contacto_linea">info@verde.com</span>
             </section>
             <section><!--BOLETIN-->
-                <h4>Boletín</h4>
-                <span>Recibí las novedades</span>
-                <form action="" method="" enctype="" enctype="">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="apellido" class="form-label">Apellido:</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
-                    </div>
+                <h4 class="footer_titulo">Recibí nuestras novedades</h4>
+                    <form action="" method="" enctype="" enctype="">
+                        <div class="mb-3">
+                        <input class="inputsize" type="email" class="form-control" id="email" placeholder="Ingresá tu email">
+                         </div>
                     <div>
-                        <button type="button" class="btn btn_suscribirse">Suscribirse</button>
+                        <button class="btn btn_suscribirse" type="button" >Suscribirse</button>
                     </div>
-                </form>
-                
+                     </form>
             </section>
             <section><!--REDES SOCIALES-->
-                <h4>Seguinos</h4>
-                <a class="SM--facebook" href="https://www.facebook.com">
+                <h4 class="footer_titulo">Nuestras redes</h4>
+                <a class="footer_redes" href="https://www.facebook.com">
                     <span class="jam jam-facebook"></span>
                 </a>
-                <a class="SM--instagram" href="https://www.instagram.com">
+                <a class="footer_redes" href="https://www.instagram.com">
                     <span class="jam jam-instagram"></span>
                 </a>
-                <a class="SM--linkedin" href="https://www.linkedin.com">
+                <a class="footer_redes" href="https://www.linkedin.com">
                     <span class="jam jam-linkedin"></span>
                 </a>
-                <a class="SM--youtube" href="https://www.youtube.com">
+                <a class="footer_redes" href="https://www.youtube.com">
                     <span  class="jam jam-youtube"></span>
                 </a>
             </section>            

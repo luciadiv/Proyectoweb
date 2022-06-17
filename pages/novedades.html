@@ -6,145 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Últimas novedades. Informate sobre todas las novedades de Verde, una institución que busca un mundo sin contaminación">
     <meta name="keyword" content="naturaleza, argentina, humedales, biologia, ecosistemas, biodiversidad, contaminación, medioambiente, noticias, novedades">
+    <link rel="icon" type="imageicon" href="../images/Logo-mini.png">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Verde | Novedades</title>
     <link rel="stylesheet" href="../css/estilos.css"/>
 </head>
 <body>
-    <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
-        <a href="../index.html" class="header_logo_padre">
-            <img  class="header_logo" src="../images/Logo_color.png" alt="Logotipo Verde">
-           </a>
-        <div>
-            <a href="#menu" class="menu_escondido">
-                <span class="jam jam-menu"></span>
-            </a>
-        </div>
-        <nav  class="menu_hidden"  id="menu"> 
-           <ul class="header_menu" class="nav_lista" >
-               <li class="header_nav"><a class="header_link" href="../pages/quienessomos.html">Quiénes somos</a></li>
-               <li class="header_nav"><a class= "header_link" href="../pages/quehacemos.html">Qué hacemos</a></li>
-               <li class="header_nav"><a class= "header_link" href="../pages/novedades.html">Novedades</a></li>
-               <li class="headder_nav"><a class= "header_link" href="../pages/contacto.html">Contacto</a></li>
-               <li class="cruz_hidden" class="headder_nav"><a class= "header_link" href="#"><span class="jam jam-close" ></span></a></li>
-              </ul>
+  <header class="header"> <!--header: logo linkeado + menu linkedo + boton doná linkeado-->
+    <a class="header_marca" href="../index.html">
+     <img  class="header_logo" src="../images/Logo_color.png" alt="Logotipo Verde">
+    </a>
+    <a href="#menu" class="header_open">
+         <span class="jam jam-menu"></span>
+     </a>
+    <nav id="menu"> 
+    <ul class="header_menu">
+        <li><a class="header_link" href="../pages/quienessomos.html">Quiénes somos</a></li>
+        <li><a class= "header_link" href="../pages/quehacemos.html">Qué hacemos</a></li>
+        <li><a class= "header_link" href="novedades.html">Novedades</a></li>
+        <li><a class= "header_link" href="../pages/contacto.html">Contacto</a></li>
+        <li class="cruz_hidden"><a class= "header_link" href="#"><span class="jam jam-close" ></span></a></li>
+     </ul>
     </nav>
-      <div class="header_animacion">
-        <button class="header_boton" ><a class="header_link" href="../pages/dona.html">DONÁ</a></button>
-      </div>
-   </header> <!--fin del header-->
-   <main class="quienesSomos_main" class="colorcard">
-    <div>
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../images/humedales2.jpg" class="card-img-top" alt="Humedales">
-                    <div class="colorcard" class="card-body" >
-                      <h2 class="noticia_titulo" class="card-title">Ley de Humedales YA!</h2>
-                      <p class="noticia_parrafo" class="card-text"> Los humedales son una de las posibles soluciones a los incendios en Argentina ¡Conoce más! Aprendé para qué sirven los humedales y qué se exige con la ley de humedales en...</p>
-                      <a href="#">Leer más</a>
-                    </div>
-                  </div>    
+ <div>
+     <button  class="header_boton"><a class="header_boton_link" href="../pages/dona.html">DONÁ</a></button>
+ </div>
+</header> <!--fin del header-->
+   <main class="main_novedades" class="colorcard">
+      <div class="row row-cols-1 row-cols-md-3 g-4" >
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/biodiversidad2.jpg" class="card-img-top" alt="biodiversidad2">
+            <div class="card-body">
+              <h5 class="card-title">22 de mayo, día de la biodiversidad</h5>
+              <p class="card-text">Fecha para tomar conciencia de la importancia de los ecosistemas y los animales para el buen funcionamiento del planeta</p>
+              <a href="">Leer más</a>
             </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="../images/yaguaretes.jpg" class="card-img-top" alt="Yaguaretes">
-                <div class="colorcard" class="card-body" >
-                  <h2 class="noticia_titulo" class="card-title">Protegé a los yaguaretés</h2>
-                  <p class="noticia_parrafo" class="card-text"> Argentina es el país de Sudamérica en el que quedan menos yaguaretés. Sólo 250 individuos en todo el país y en la región del Gran Chaco hoy se estima que hay menos de 20.</p>
-                  <a href="#">Leer más</a>
-                </div>
-              </div>  
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="../images/especies.jpg" class="card-img-top" alt="pajaro">
-                <div class="colorcard" class="card-body" >
-                  <h2 class="noticia_titulo" class="card-title"> Nuevos efectos del cambio climático </h2>
-                  <p class="noticia_parrafo" class="card-text">Un nuevo estudio demostró que la evolución de las especies podría estar ocurriendo de forma muy acelerada a causa del cambio climático. </p>
-                  <a href="#">Leer más</a>
-                </div>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 22/05/2022</small>
+            </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../images/biodiversidad.jpg" class="card-img-top" alt="biodiversidad">
-                    <div class="colorcard" class="card-body" >
-                      <h2 class="noticia_titulo" class="card-title">22 de mayo, día de la biodiversidad</h2>
-                      <p class="noticia_parrafo" class="card-text"> Fecha para tomar conciencia de la importancia de los ecosistemas y los animales para el buen funcionamiento del planeta </p>
-                      <a href="#">Leer más</a>
-                    </div>
-                  </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/humedales2.jpg" class="card-img-top" alt="Humedales2">
+            <div class="card-body">
+              <h5 class="card-title">Ley de Humedales ¡YA!</h5>
+              <p class="card-text">Los humedales son una de las posibles soluciones a los incendios en Argentina ¡Conoce más! Aprendé para qué sirven los humedales y qué se exige con la ley.</p>
+              <a href="">Leer más</a>
             </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="../images/contaminacion.jpg" class="card-img-top" alt="contaminacion">
-                <div class="colorcard" class="card-body" >
-                  <h2 class="noticia_titulo" class="card-title">Erradicar la contaminación</h2>
-                  <p class="noticia_parrafo" class="card-text"> La Universidad Nacional Autónoma de México (UNAM) creo una forma de atraer petróleos y otros aceites, de playas grandes cuerpos de agua para ser recolectados y reciclados.</p>
-                  <a href="#">Leer más</a>
-                </div>
-            </div>          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="../images/ecocidio.jpg" class="card-img-top" alt="ecocidio">
-                <div class="colorcard" class="card-body" >
-                  <h2 class="noticia_titulo" class="card-title">¿Qué es el ecocidio?</h2>
-                  <p class="noticia_parrafo" class="card-text"> El ecocidio es un neologismo que en principio, hace referencia a cualquier daño masivo o destrucción ambiental de un territorio determinado, parte de uno o más países, o bien, con consecuencias a escala global.</p>
-                  <a href="#">Leer más</a>
-                </div>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 03/05/2022</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/yaguaretes.jpg" class="card-img-top" alt="Yaguaretes">
+            <div class="card-body">
+              <h5 class="card-title">Protegé a los yaguaretés</h5>
+              <p class="card-text">Argentina es el país de Sudamérica en el que quedan menos yaguaretés. Sólo 250 individuos en todo el país y en la región del Gran Chaco hoy se estima que hay menos de 20.</p>
+              <a href="">Leer más</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 09/04/2022</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/pajaro.jpg" class="card-img-top" alt="pajaro">
+            <div class="card-body">
+              <h5 class="card-title">Nuevos efectos del cambio climático</h5>
+              <p class="card-text">Un nuevo estudio demostró que la evolución de las especies podría estar ocurriendo de forma muy acelerada a causa del cambio climático.</p>
+              <a href="">Leer más</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 30/03/2022</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/contaminacion.jpg" class="card-img-top" alt="contaminacion">
+            <div class="card-body">
+              <h5 class="card-title">Erradicar la contaminación</h5>
+              <p class="card-text">La Universidad Nacional Autónoma de México (UNAM) creo una forma de atraer petróleos y otros aceites, de playas grandes cuerpos de agua para ser recolectados y reciclados.</p>
+              <a href="">Leer más</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 15/03/2022</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/ecocidio.jpg" class="card-img-top" alt="ecocidio">
+            <div class="card-body">
+              <h5 class="card-title">¿Qué es el ecocidio?</h5>
+              <p class="card-text">El ecocidio es un neologismo que en principio, hace referencia a cualquier daño masivo o destrucción ambiental de un territorio determinado, parte de uno o más países, o bien, con consecuencias a escala global.</p>
+              <a href="">Leer más</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Fecha de publicación: 03/03/2022</small>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer"><!--footer: contacto simple+ newsletter formulario + redes con enlaces-->
-        <section> <!--CONTACTO-->               
-            <h4>Contacto</h4>
-            <span class="footer_contacto_linea">CABA, Argentina</span> 
-            <span class="footer_contacto_linea"> + 54 9 11 51199020</span>
-            <span class="footer_contacto_linea">info@verde.com</span>
-        </section>
-        <section><!--BOLETIN-->
-            <h4>Boletín</h4>
-            <span>Recibí las novedades</span>
-            <form action="" method="" enctype="" enctype="">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido:</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
-                </div>
-                <div>
-                    <button type="button" class="btn btn_suscribirse">Suscribirse</button>
-                </div>
-            </form>
-            
-        </section>
-        <section><!--REDES SOCIALES-->
-            <h4>Seguinos</h4>
-            <a class="footer_redes" href="https://www.facebook.com">
-                <span class="jam jam-facebook"></span>
-            </a>
-            <a class="footer_redes" href="https://www.instagram.com">
-                <span class="jam jam-instagram"></span>
-            </a>
-            <a class="footer_redes" href="https://www.linkedin.com">
-                <span class="jam jam-linkedin"></span>
-            </a>
-            <a class="footer_redes" href="https://www.youtube.com">
-                <span  class="jam jam-youtube"></span>
-            </a>
-        </section>            
+      <section> <!--CONTACTO-->               
+          <h4 class="footer_titulo">Contacto</h4>
+          <span class="footer_contacto_linea">Cerrito 1999, CABA, Argentina</span> 
+          <span class="footer_contacto_linea">Tel.: +5491151199020</span>
+          <span class="footer_contacto_linea">info@verde.com</span>
+      </section>
+      <section><!--BOLETIN-->
+          <h4 class="footer_titulo">Recibí nuestras novedades</h4>
+              <form action="" method="" enctype="" enctype="">
+                  <div class="mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
+                   </div>
+              <div>
+                  <button type="button" class="btn btn_suscribirse">Suscribirse</button>
+              </div>
+               </form>
+      </section>
+      <section><!--REDES SOCIALES-->
+          <h4 class="footer_titulo">Nuestras redes</h4>
+          <a class="footer_redes" href="https://www.facebook.com">
+              <span class="jam jam-facebook"></span>
+          </a>
+          <a class="footer_redes" href="https://www.instagram.com">
+              <span class="jam jam-instagram"></span>
+          </a>
+          <a class="footer_redes" href="https://www.linkedin.com">
+              <span class="jam jam-linkedin"></span>
+          </a>
+          <a class="footer_redes" href="https://www.youtube.com">
+              <span  class="jam jam-youtube"></span>
+          </a>
+      </section>            
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

@@ -1,10 +1,11 @@
-.noticia_titulo {
-    font-size: 30px;
-    color: #2b2b2b;
-    padding: 10px;
+.main_novedades {
+    width:map-get($main,width);
+    padding:map-get($main,padding);
+    background-image: map-get($estilos,background-image);
 }
-.noticia_parrafo{
-    font-size: 15px;
-    color: #2b2b2b;
-    padding: 3px;
+
+.card.h-100 {
+    animation-name: animacion;
+    animation-duration: 0.7s;
 }
+
